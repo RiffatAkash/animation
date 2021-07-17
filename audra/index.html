@@ -227,13 +227,12 @@ body,html{
     $('.alf_box').bind('click touchstart',()=>{
         $('.alf_box_btnbgwcircle').animate({'left':'60px'},300);
         setTimeout(()=>{
-            $('.alf_box_btnbgwcircle').addClass('hidden');
             $('.alf_box_yes').removeClass('hidden');
-            setTimeout(()=>{
-            $('.alf_box').css('opacity','0');
-            $('.alf_box_2').css('z-index','9');
-            },100);
-        },350);
+                setTimeout(()=>{
+                $('.alf_box').addClass('hidden');
+                $('.alf_box_2').css('z-index','9');
+                },600);
+        },300);
     })
 </script>
 </body>
