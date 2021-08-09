@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: 100% 100% no-repeat;
+  cursor: pointer;
+}
+body,
+html {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.absolute {
+  position: absolute;
+}
+.pop_ban_box {
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  background: url(asset/mainslide/bg.jpg);
+}
+.pop_ban_details_header {
+  height: 55px;
+  width: 166px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/text.png);
+  top: 10px;
+  left: 66px;
+  z-index: 101;
+}
+.pop_ban_lines {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/lines.png);
+  height: 120px;
+  width: 184px;
+  top: 90px;
+  left: 55px;
+  z-index: 101;
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.38, 0.37, 0.74, 0.525);
+}
+[class^="pop_ban_window_"] {
+  height: 26px;
+  width: 26px;
+  z-index: 101;
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.38, 0.37, 0.74, 0.525);
+}
+.pop_ban_window_1 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/04.png);
+  top: 95px;
+  left: 55px;
+}
+.pop_ban_window_2 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/03.png);
+  top: 140px;
+  left: 42px;
+}
+.pop_ban_window_3 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/02.png);
+  top: 185px;
+  left: 60px;
+}
+.pop_ban_window_4 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/05.png);
+  top: 70px;
+  left: 209px;
+}
+.pop_ban_window_5 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/07.png);
+  top: 105px;
+  left: 215px;
+}
+.pop_ban_window_6 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/01.png);
+  top: 145px;
+  left: 222px;
+}
+.pop_ban_window_7 {
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/mainslide/button/06.png);
+  top: 180px;
+  left: 212px;
+}
+.pulse {
+  animation: pulse 1s ease infinite;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    -moz-transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    -moz-transform: scale(0.1);
+    opacity: 0.6;
+  }
+}
+.pop_ban_details_1 {
+  height: 250px;
+  width: 300px;
+  top: -250px;
+  left: 0;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/004.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_1 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 135px;
+  left: 60px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_1 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 0;
+}
+.pop_ban_details_2 {
+  height: 250px;
+  width: 300px;
+  top: 0px;
+  left: -300px;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/003.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_2 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 150px;
+  left: 180px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_2 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 235px;
+}
+.pop_ban_details_3 {
+  height: 250px;
+  width: 300px;
+  top: 250px;
+  left: 0;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/002.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_3 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 135px;
+  left: 55px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_3 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 0;
+}
+.pop_ban_details_4 {
+  height: 250px;
+  width: 300px;
+  top: -250px;
+  left: 0;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/005.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_4 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 140px;
+  left: 170px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_4 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 235px;
+}
+.pop_ban_details_5 {
+  height: 250px;
+  width: 300px;
+  top: 0px;
+  left: 300px;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/007.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_5 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 155px;
+  left: 170px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_5 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 235px;
+}
+.pop_ban_details_6 {
+  height: 250px;
+  width: 300px;
+  top: 0px;
+  left: 300px;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/001.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_6 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 145px;
+  left: 155px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_6 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 235px;
+}
+.pop_ban_details_7 {
+  height: 250px;
+  width: 300px;
+  top: 250px;
+  left: 0;
+  background-image: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/006.jpg);
+  transition: all 0.35s ease;
+  z-index: 1000;
+}
+.gp_feature_btn_7 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 140px;
+  left: 55px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.65s linear infinite;
+  animation-delay: 1s;
+}
+.gp_feature_back_7 {
+  height: 50px;
+  width: 50px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/back2.png);
+  top: 200px;
+  left: 0;
+}
+.gp_feature_btn_8 {
+  height: 24px;
+  width: 80px;
+  background: url(//ms.purplepatch.online/slideanim/gp/big-pop-20/asset/pop/buynow.png);
+  top: 220px;
+  left: 213px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  animation: bounceIn 1.25s linear infinite;
+  animation-delay: 1s;
+}
+[class^="gp_feature_back_"] {
+  animation: toRL 0.75s infinite;
+}
+@keyframes toRL {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+@keyframes bounceIn {
+  20%,
+  40%,
+  60%,
+  80%,
+  from,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
