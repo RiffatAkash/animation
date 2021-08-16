@@ -1,0 +1,125 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title> slide animation  </title>
+  <link href="https://fonts.googleapis.com/css?family=Aldrich" rel='stylesheet'>
+  <meta name="ad.size" content="width=300,height=250">
+	<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+#page {
+  width: 300px;
+  height: 250px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#viewport-shadow {
+  position: relative;
+  width: 300px;
+  padding:0;
+}
+
+/* line 29, sass/screen.scss */
+#viewport, #box, .slide {
+  width: 300px;
+  height: 250px;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+#viewport {
+  overflow: hidden;
+}
+
+#time-indicator {
+  width: 0px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom:0px;
+  left: 0px;
+}
+
+    
+  </style>
+  <script src="//ms.purplepatch.online/ideas/slide/assets/modernizr.min.js"></script>
+
+</head>
+	<body>
+	  <div id="page">
+
+      <section>      
+        <div id="viewport-shadow">
+          <div id="viewport">
+            <div id="box">
+              <figure class="slide">
+                <img src="images/bg1.jpg">
+              </figure>
+              <figure class="slide">
+                <img src="images/bg2.jpg">
+              </figure>
+              <figure class="slide">
+                <img src="images/bg3.jpg">
+              </figure>
+            </div>
+          </div>
+          <div id="time-indicator"></div>
+        </div>
+
+      </section>
+
+	  </div>
+		<script src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="//ms.purplepatch.online/ideas/slide/assets/box-slider-all.jquery.min.js"></script>
+
+		<script>
+
+		  $(function () {
+        var $box = $('#box') , $timeIndicator = $('#time-indicator'), slideInterval = 1000;
+        var switchIndicator = function ($c, $n, currIndex, nextIndex) {
+          $timeIndicator.stop().css('width', 0);
+        };
+
+        var startTimeIndicator = function () {
+          $timeIndicator.animate({width: '300px'}, slideInterval);
+        };
+
+        // initialize the plugin with the desired settings
+        $box.boxSlider({
+            speed: 700, 
+            autoScroll: true, 
+            timeout: slideInterval, 
+            next: '#next', 
+            prev: '#prev', 
+            pause: '#pause', 
+            effect: 'blindDown', 
+            blindCount: 15, 
+            onbefore: switchIndicator, 
+            onafter: startTimeIndicator
+        });
+        startTimeIndicator();
+
+        $("#viewport-shadow").click(function(){
+          window.open('{CLICK_MACRO}','_blank');
+        })
+
+		  });
+
+		</script>
+	</body>
+</html>
